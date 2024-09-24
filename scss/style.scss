@@ -1,0 +1,596 @@
+@import "variable.scss";
+@import "template.scss";
+@import "mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @extend %header_border_value;
+}
+
+.main_tags_template {
+    @extend %main_block_template;
+}
+
+.header-body {
+    position: relative;
+    height: 6vw;
+    @extend %header_border_value;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-block1 {
+    position: relative;
+    width: 12vw;
+    height: 100%;
+    @extend %header_border_value;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .header-block1__title1 {
+        position: relative;
+        width: 10vw;
+        height: auto;
+        @extend %header_border_value;
+        margin-top: 1vw;
+        & p {
+            font-size: 1.9vw;
+            font-weight: bold;
+        }
+    }
+    
+    .header-block1__title2 {
+        position: relative;
+        width: 10vw;
+        height: auto;
+        @extend %header_border_value;
+        & p {
+            font-size: 0.9vw;
+        }
+    }
+}
+
+
+
+.header-block2 {
+    position: relative;
+    width: 28vw;
+    height: 100%;
+    @extend %header_border_value;
+    display: flex;
+    justify-content: space-between;
+
+    .hbbuttons {
+        position: relative;
+        height: 4vw;
+        @extend %header_border_value;
+        display: flex;
+        align-items: flex-end;
+        & .place {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -30%;
+            transform: translateY(-100%);
+            background-color: #d45e5e;
+            transition: 0.2s ease;
+        }
+        &:hover {
+            & .place {
+                top: 99%;
+            }
+        } 
+        .header-block2-buttons {
+            position: relative;
+            width: 100%;
+            height: 2vw;
+            @extend %header_border_value;
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & p {
+                font-size: 1.2vw;
+            }
+        }
+
+        &:first-child {
+            margin-left: 0.5vw;
+        }
+    }
+
+    .header-block2-block-button1 {
+        position: relative;
+        width: 4vw;
+        height: 4vw;
+        @extend %header_border_value;
+        & .place {
+        }
+        &:hover {
+            & .place {
+                top: 99%;
+            }
+        }
+        & .header-block2-button1 {
+            & p {
+            }
+        }
+    }
+
+    .header-block2-block-button2 {
+        position: relative;
+        width: 6vw;
+        height: 4vw;
+        & .place {
+        }
+        &:hover {
+            & .place {
+            }
+        }
+        & .header-block2-button2 {
+            & p {
+            }
+        }
+    }
+
+    .header-block2-block-button3 {
+        position: relative;
+        width: 4vw;
+        height: 4vw;
+        & .place {
+        }
+        &:hover {
+            & .place {
+            }
+        }
+        & .header-block2-button3 {
+            & p {
+            }
+        }
+    }
+
+    .header-block2-block-button4 {
+        position: relative;
+        width: 5.1vw;
+        height: 4vw;
+        & .place {
+        }
+        &:hover {
+            & .place {
+            }
+        }
+        & .header-block2-button4 {
+            & p {
+            }
+        }
+    }
+}
+
+// <!====================================================================================================================
+// * tag main
+.main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    @extend %main_basic_border_value;
+    .content1 {
+        position: relative;
+        width: 100%;
+        height: 18.5vw;
+        @extend %main_basic_border_value;
+        .line_width_shadow {
+            position: absolute;
+            width: 100%;
+            height: 1vw;
+            top: 13.1vw;
+            @extend %main_basic_border_value;
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content1-body {
+            position: relative;
+            height: 100%;
+            @extend %main_basic_border_value;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .main_char {
+                position: relative;
+                width: 5vw;
+                height: 3.5vw;
+                @extend %main_basic_border_value;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                & img {
+                    position: absolute;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            & .subtitle {
+                position: relative;
+                width: 40vw;
+                height: 6vw;
+                @extend %main_basic_border_value;
+                & p {
+                    text-align: center;
+                    font-size: 1.8vw;
+                    line-height: 1.5;
+                }
+            }
+            .pencil_and_ruler {
+                position: relative;
+                width: 20vw;
+                height: 5vw;
+                @extend %main_basic_border_value;
+                top: 3.6vw;
+                display: flex;
+                justify-content: center;
+                & .pencil {
+                    position: relative;
+                    width: 5vw;
+                    height: 4vw;
+                    @extend %main_basic_border_value;
+                    & img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                & .ruler {
+                    position: relative;
+                    width: 3.5vw;
+                    height: 3vw;
+                    @extend %main_basic_border_value;
+                    & img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-body {
+        position: relative;
+        @extend %main_basic_border_value;
+        & .title { 
+            position: relative;
+            width: 100%;
+            height: auto;
+            @extend %main_basic_border_value;
+            & p {
+                font-size: 1.7vw;
+            }
+        }
+        & .picture_library {
+            position: relative;
+            width: 95%;
+            height: auto;
+            padding: 1vw 0;
+            padding-bottom: 8vw;
+            left: 50%;
+            transform: translateX(-50%);
+            @extend %main_basic_border_value;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .pl-ims {
+                position: relative;
+                width: 20vw;
+                height: 20vw;
+                margin: 1vw;
+                @extend %main_basic_border_value;
+                // margin: 0 auto;
+                & img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .pl-img1 {
+            }
+            .pl-img2 {
+            }
+            .pl-img3 {
+            }
+            .pl-img4 {
+            }
+            .pl-img5 {
+            }
+            .pl-img6 {
+            }
+            .pl-img7 {
+            }
+            .pl-img8 {
+            }
+            .pl-img9 {
+            }
+            .pl-img10 {
+            }
+            .pl-img11 {
+            }
+            .pl-img12 {
+            }
+        }
+    }
+}
+
+// <!====================================================================================================================
+// * footer
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 22vw;
+        background-color: #d45e5e;
+        @extend %footer_basic_border_value;
+        .footer-body {
+            height: 100%;
+            @extend %footer_basic_border_value;
+        }
+        .footer-main-block {
+            position: relative;
+            width: 85vw;
+            height: 24vw;
+            @extend %footer_basic_border_value;
+            bottom: 3vw;
+            left: 50%;
+            transform: translateX(-50%);
+            display: grid;
+            grid-template-rows: repeat(10, 10%);
+            grid-template-columns: repeat(20, 5%);
+        }
+        .footer-block1 {
+            grid-row: 1/6;
+            grid-column: 1/11;
+            position: relative;
+            @extend %footer_basic_border_value;
+            display: flex;
+            .photo {    
+                position: relative;
+                width: 9vw;
+                height: 9vw;
+                @extend %footer_basic_border_value;
+                & img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .title_and_location {
+                position: relative;
+                width: 11vw;
+                height: 5vw;
+                top: 100%;
+                transform: translateY(-100%);
+                margin-left: 0.5vw;
+                margin-right: 29%;
+                @extend %footer_basic_border_value;
+                font-size: 1.5vw;
+                font-family: sans-serif;
+                & p:nth-child(1) {
+                    color: white;
+                }
+                & p:nth-child(2) {
+                    & img {
+                        margin-right: 0.2vw;
+                        width: 15%;
+                    }
+                }
+            }
+            .internet-services {
+                position: relative;
+                width: 8vw;
+                height: 3.5vw;
+                padding: 0 0.2vw;
+                @extend %footer_basic_border_value;
+                top: 100%;
+                transform: translateX(-100%);
+                transform: translateY(-100%);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                & img:nth-child(1) {
+                    position: relative;
+                    width: 50%;
+                    height: 90%;
+                    margin: 0.2vw;
+                    @extend %footer_basic_border_value; 
+                }
+                & img:nth-child(2) {
+                    position: relative;
+                    width: 50%;
+                    height: 90%;
+                    @extend %footer_basic_border_value;
+                }
+            }
+            .footer-block2-in-block1-mobile * {
+                display: none;
+            }
+        }
+        .footer-block2 {
+            grid-row: 7/11;
+            grid-column: 1/12;
+            position: relative;
+            @extend %footer_basic_border_value;
+            & p {
+                color: white;
+                font-family: sans-serif;
+                font-size: 1.15vw;
+            }
+        }
+        .footer-block3 {
+            grid-column: 13/21;
+            grid-row: 5/11;
+            position: relative;
+            @extend %footer_basic_border_value;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            & .title {
+                position: relative;
+                width: 8vw;
+                height: 2.2vw;
+                @extend %footer_basic_border_value;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & p {
+                    color: white;
+                    font-size: 1.8vw;
+                    font-family: sans-serif;
+                }
+            }
+            .skill-block {
+                position: relative;
+                width: 30vw;
+                height: 10vw;
+                @extend %footer_basic_border_value;
+                bottom: 1vw;
+                left: 50%;
+                transform: translateX(-50%);
+                .skill-block--blocks {
+                    position: relative;
+                    width: 100%;
+                    height: 25%;
+                    display: flex;
+                    .icon-and-progress-block {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        @extend %footer_basic_border_value;
+                        display: flex;
+                        align-items: center;
+                        & .icon {
+                            position: relative;
+                            width: 10%;
+                            height: 100%;
+                            @extend %footer_basic_border_value;
+                            margin-right: 0.2vw;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            & img {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: auto;
+                                height: 95%;
+                            }
+                        }
+                        .progress-bar {
+                            position: relative;
+                            width: 85%;
+                            height: 50%;
+                            @extend %footer_basic_border_value;
+                            & .progress-bar__percent {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 50%;
+                                height: 100%;
+                                background-color: black;
+                            } 
+                        }
+                    }
+                }
+                .skill-block-block1 {
+                    .icon-and-progress-block {
+                        & .icon {
+                            & img {
+                            }
+                        }
+                        .progress-bar {
+                            & .progress-bar__percent {
+                                width: 80%;
+                            } 
+                        }
+                        
+                    }
+                }
+                .skill-block-block2 {
+                    .icon-and-progress-block {
+                        & .icon {
+                            & img {
+                            }
+                        }
+                        .progress-bar {
+                            & .progress-bar__percent {
+                                width: 60%;
+                            } 
+                        }
+                        
+                    }
+                }
+                .skill-block-block3 {
+                    .icon-and-progress-block {
+                        & .icon {
+                            & img {
+                            }
+                        }
+                        .progress-bar {
+                            & .progress-bar__percent {
+                                width: 50%;
+                            } 
+                        }
+                        
+                    }
+                }
+                .skill-block-block4 {
+                    .icon-and-progress-block {
+                        & .icon {
+                            & img {
+                            }
+                        }
+                        .progress-bar {
+                            & .progress-bar__percent {
+                                width: 90%;
+                            } 
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }     
+    
+    
+
+
+
+// <!====================================================================================================================
+// * media
+@import "media.scss"; 

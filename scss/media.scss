@@ -1,0 +1,586 @@
+@media only screen and (max-width: 768px) {
+    .header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @extend %header_border_value;
+    }
+
+    .main_tags_template {
+        width: 100%;
+    }
+
+    .header-body {
+        position: relative;
+        height: auto;
+        @extend %header_border_value;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .header-block1 {
+        position: relative;
+        width: 100%;
+        height: 15vw;
+        border-bottom: 0.3vw solid #d0d0d0;
+        @extend %header_border_value;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        .header-block1__title1 {
+            position: relative;
+            width: auto;
+            height: 60%;
+            padding: 0.5vw 0 0 0.5vw;
+            @extend %header_border_value;
+            margin-top: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            & p {
+                font-size: 8vw;
+                font-weight: bold;
+            }
+        }
+        
+        .header-block1__title2 {
+            position: relative;
+            width: 100%;
+            height: 40%;
+            padding: 0.5vw 0 0 0.5vw;
+            @extend %header_border_value;
+            & p {
+                font-size: 2.5vw;
+            }
+        }
+    }
+
+    // <!====================================================================================================================
+    // * .header-block2 
+    .header-block2 {
+        position: relative;
+        width: 100%;
+        height: 8vw;
+        overflow: hidden;
+        @extend %header_border_value;
+        display: flex;
+        justify-content: space-between;
+
+        & .hbbuttons {
+            & .place {
+                display: none;
+            }
+        }
+
+
+    
+        .hbbuttons {
+            position: relative;
+            height: 100%;
+            @extend %header_border_value;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .header-block2-buttons {
+                position: relative;
+                width: 100%;
+                height: auto;
+                @extend %header_border_value;
+                cursor: pointer;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & p {
+                    font-size: 4vw;
+                    font-family: sans-serif;
+                }
+            }
+    
+            &:first-child {
+                margin-left: 1.5vw;
+            }
+            &:last-child {
+                margin-right: 1.5vw;
+            }
+        }
+    
+        .header-block2-block-button1 {
+            position: relative;
+            width: auto;
+            @extend %header_border_value;
+            & .place {
+            }
+            &:hover {
+                & .place {
+                    top: 99%;
+                }
+            }
+            & .header-block2-button1 {
+                & p {
+                }
+            }
+        }
+    
+        .header-block2-block-button2 {
+            position: relative;
+            width: auto;
+            & .place {
+            }
+            &:hover {
+                & .place {
+                }
+            }
+            & .header-block2-button2 {
+                & p {
+                }
+            }
+        }
+    
+        .header-block2-block-button3 {
+            position: relative;
+            width: auto;
+            & .place {
+            }
+            &:hover {
+                & .place {
+                }
+            }
+            & .header-block2-button3 {
+                & p {
+                }
+            }
+        }
+    
+        .header-block2-block-button4 {
+            position: relative;
+            width: auto;
+            & .place {
+            }
+            &:hover {
+                & .place {
+                }
+            }
+            & .header-block2-button4 {
+                & p {
+                }
+            }
+        }
+    }
+}
+
+// <!====================================================================================================================
+// * tag main
+@media only screen and (max-width: 768px) {
+.main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    @extend %main_basic_border_value;
+    padding-top: 2vw;
+    .content1 {
+        position: relative;
+        width: 100%;
+        height: 40vw;
+        @extend %main_basic_border_value;
+        .line_width_shadow {
+            position: absolute;
+            width: 100%;
+            height: 1vw;
+            top: 27.6vw;
+            @extend %main_basic_border_value;
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content1-body {
+            position: relative;
+            height: 100%;
+            @extend %main_basic_border_value;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .main_char {
+                position: relative;
+                width: 11vw;
+                height: 9vw;
+                @extend %main_basic_border_value;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                & img {
+                    position: absolute;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            & .subtitle {
+                position: relative;
+                width: auto;
+                height: 15vw;
+                top: 1.5vw;
+                @extend %main_basic_border_value;
+                & p {
+                    text-align: center;
+                    font-size: 3.5vw;
+                    line-height: 1.3;
+                    font-family: sans-serif;
+                }
+            }
+            .pencil_and_ruler {
+                position: relative;
+                width: 23vw;
+                height: 8vw;
+                @extend %main_basic_border_value;
+                top: 3.6vw;
+                display: flex;
+                justify-content: center;
+                & .pencil {
+                    position: relative;
+                    width: 50%;
+                    height: 100%;
+                    @extend %main_basic_border_value;
+                    & img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                & .ruler {
+                    position: relative;
+                    width: 50%;
+                    height: 100%;
+                    @extend %main_basic_border_value;
+                    & img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // <!====================================================================================================================
+    // * main body 
+    .main-body {
+        position: relative;
+        @extend %main_basic_border_value;
+        & .title { 
+            position: relative;
+            width: 100%;
+            height: auto;
+            @extend %main_basic_border_value;
+            & p {
+                font-size: 5vw;
+                font-family: sans-serif;
+                margin-left: 1.5vw;
+            }
+        }
+        & .picture_library {
+            position: relative;
+            width: 95%;
+            height: auto;
+            padding: 1vw 0;
+            padding-bottom: 8vw;
+            left: 50%;
+            transform: translateX(-50%);
+            @extend %main_basic_border_value;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            .pl-ims {
+                position: relative;
+                width: 30vw;
+                height: 30vw;
+                margin: 3vw;
+                @extend %main_basic_border_value;
+                // margin: 0 auto;
+                & img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .pl-img1 {
+            }
+            .pl-img2 {
+            }
+            .pl-img3 {
+            }
+            .pl-img4 {
+            }
+            .pl-img5 {
+            }
+            .pl-img6 {
+            }
+            .pl-img7 {
+            }
+            .pl-img8 {
+            }
+            .pl-img9 {
+            }
+            .pl-img10 {
+            }
+            .pl-img11 {
+            }
+            .pl-img12 {
+            }
+        }
+    }
+}
+}
+
+
+// <!====================================================================================================================
+// * footer
+@media only screen and (max-width: 768px) {
+.footer {
+    position: relative;
+    width: 100%;
+    height: 75vw;
+    background-color: #d45e5e;
+    @extend %footer_basic_border_value;
+    .footer-body {
+        height: 100%;
+        @extend %footer_basic_border_value;
+    }
+    .footer-main-block {
+        position: relative;
+        width: 85vw;
+        height: auto;
+        @extend %footer_basic_border_value;
+        bottom: 3vw;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+    }
+    .footer-block1 {
+        position: relative;
+        height: auto;
+        @extend %footer_basic_border_value;
+        display: flex;
+        flex-wrap: wrap;
+        .photo {    
+            position: relative;
+            width: 18vw;
+            height: 18vw;
+            @extend %footer_basic_border_value;
+            & img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .title_and_location {
+            position: relative;
+            width: 15vw;
+            height: 6vw;
+            top: 12vw;
+            transform: none;
+            margin-left: 0.5vw;
+            margin-right: 2%;
+            @extend %footer_basic_border_value;
+            font-size: 1.9vw;
+            font-family: sans-serif;
+            & p:nth-child(1) {
+                color: white;
+            }
+            & p:nth-child(2) {
+                & img {
+                    margin-right: 0.2vw;
+                    width: 15%;
+                }
+            }
+        }
+        .internet-services {
+            position: relative;
+            width: 13vw;
+            height: 6vw;
+            padding: 0 0.2vw;
+            top: 12vw;
+            transform: none;
+            transform: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            & img:nth-child(1) {
+                position: relative;
+                width: 50%;
+                height: 90%;
+                margin: 0.2vw;
+                @extend %footer_basic_border_value; 
+            }
+            & img:nth-child(2) {
+                position: relative;
+                width: 50%;
+                height: 90%;
+                @extend %footer_basic_border_value;
+            }
+        }
+        .footer-block2-in-block1-mobile * {
+            display: block;
+        }
+        .footer-block2-in-block1-mobile {
+            & p {
+                font-size: 2.5vw;
+                font-family: sans-serif;
+                text-indent: 1.5vw;
+            }
+        }
+    }
+    .footer-block2 {
+        display: none;
+    }
+    .footer-block3 {
+        position: relative;
+        @extend %footer_basic_border_value;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & .title {
+            position: relative;
+            width: 13vw;
+            height: auto;
+            margin-bottom: 5vw;
+            @extend %footer_basic_border_value;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            & p {
+                color: white;
+                font-size: 3vw;
+                font-family: sans-serif;
+            }
+        }
+        .skill-block {
+            position: relative;
+            width: 50vw;
+            height: 22vw;
+            @extend %footer_basic_border_value;
+            bottom: 1vw;
+            left: 50%;
+            transform: translateX(-50%);
+            .skill-block--blocks {
+                position: relative;
+                width: 100%;
+                height: 25%;
+                display: flex;
+                .icon-and-progress-block {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    @extend %footer_basic_border_value;
+                    display: flex;
+                    align-items: center;
+                    & .icon {
+                        position: relative;
+                        width: 10%;
+                        height: 100%;
+                        @extend %footer_basic_border_value;
+                        margin-right: 0.2vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    .progress-bar {
+                        position: relative;
+                        width: 85%;
+                        height: 50%;
+                        @extend %footer_basic_border_value;
+                        & .progress-bar__percent {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 50%;
+                            height: 100%;
+                            background-color: black;
+                        } 
+                    }
+                }
+            }
+            .skill-block-block1 {
+                .icon-and-progress-block {
+                    & .icon {
+                        & img {
+                        }
+                    }
+                    .progress-bar {
+                        & .progress-bar__percent {
+                            width: 80%;
+                        } 
+                    }
+                    
+                }
+            }
+            .skill-block-block2 {
+                .icon-and-progress-block {
+                    & .icon {
+                        & img {
+                        }
+                    }
+                    .progress-bar {
+                        & .progress-bar__percent {
+                            width: 60%;
+                        } 
+                    }
+                    
+                }
+            }
+            .skill-block-block3 {
+                .icon-and-progress-block {
+                    & .icon {
+                        & img {
+                        }
+                    }
+                    .progress-bar {
+                        & .progress-bar__percent {
+                            width: 50%;
+                        } 
+                    }
+                    
+                }
+            }
+            .skill-block-block4 {
+                .icon-and-progress-block {
+                    & .icon {
+                        & img {
+                        }
+                    }
+                    .progress-bar {
+                        & .progress-bar__percent {
+                            width: 90%;
+                        } 
+                    }
+                    
+                }
+            }
+        }
+    }
+}     
+}
